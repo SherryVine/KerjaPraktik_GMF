@@ -1,0 +1,42 @@
+#logo{
+  width: 400px;
+  filter: grayscale(100%);
+}
+
+#sp{
+  margin:0;
+  font-size:20px;
+  text-decoration: underline;
+}
+
+#logodiv{
+  margin-bottom: 20px;
+}
+
+#nosp{
+  font-size: 20px;
+  text-align: center;
+}
+
+th{
+  font-weight: normal;
+}
+
+@page {
+  size; A4;
+}
+
+@media print {
+  html, body {
+    width: 210mm;
+    height: 297mm;
+  }
+}
+
+.ttd{
+  margin-left:20px;
+}
+
+.underline{
+  text-decoration: underline;
+}
