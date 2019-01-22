@@ -40,3 +40,15 @@ th{
 .underline{
   text-decoration: underline;
 }
+#footer .noform{
+  bottom: 0;
+  margin-left: 20px;
+  margin-top: 850px;
+  text-align: left;
+}
+#footer .pageno{
+  bottom: 0;
+  text-align: right;
+  margin-right: 20px;
+  margin-top: 0px;
+}
