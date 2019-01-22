@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="custom.css">
   </head>
   <body>
-    <div class="row">
+    <div class="row mx-auto">
       <div class="col-md-4 offset-md-1" id="logodiv">
         <img src="gmf.png" alt="logo" id="logo">
       </div>
@@ -16,40 +16,59 @@
         <span id="sp"><strong>SURAT PENGIRIMAN</strong></span>
         <p>Shipping Document</p>
       </div>
+      <hr>
     </div>
     <div class="row">
       <div class="col-md-6 offset-md-1">
         <p><span class="underline"><b>Kepada</b></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: penerima<br>To:</p>
-        <p><span class="underline"><b>Dikirim oleh</b></span>&nbsp;: pengirim<br>Sent by:</p>
       </div>
     </div>
-    <div class="text-center">
-      <table style="border: 2px solid black;" class="table table-bordered text-center">
-        <thead>
-          <tr>
-            <th style="width:12%; border: 2px solid black;"><span class="underline"><b>Tanggal</b></span><br>Date</th>
-            <th style="width:12%; border: 2px solid black;"><span class="underline"><b>Banyaknya</b></span><br>Quantity</th>
-            <th style="width:48%; border: 2px solid black;"><span class="underline"><b>Macam dari barang-barang</b></span><br>Description of goods</th>
-            <th style="width:28%; border: 2px solid black;"><span class="underline"><b>Keterangan</b></span><br>Remarks</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td style="border: 2px solid black;">18 Jan 2019</td>
-            <td style="border: 2px solid black;">1</td>
-            <td style="border: 2px solid black;">Pop es Alpulkat</td>
-            <td style="border: 2px solid black;">Gak pake es</td>
-          </tr>
-        </tbody>
-        <tfoot>
-          <tr>
-            <td style="border: 2px solid black;"></td>
-            <td style="border: 2px solid black;"></td>
-            <td style="text-align:left; border: 2px solid black;"><span class="underline"><b>Dikirim oleh</b></span>&nbsp;&nbsp;: orang<br>Packed by</td>
-            <td></td>
-          </tr>
-        </tfoot>
-      </table>
+    <div class="row">
+      <div class="col-md-6 offset-md-1">
+      <p><span class="underline"><b>Dikirim oleh</b></span>&nbsp;: pengirim<br>Sent by:</p>
+      </div>
+    </div>
+    <div class="text-center row">
+      <div class="col-md-12 center">
+        <table align="center" class="table table-bordered" id="table">
+          <thead>
+            <tr>
+              <th style="width:12%;"><span class="underline"><b>Tanggal</b></span><br>Date</th>
+              <th style="width:12%;"><span class="underline"><b>Banyaknya</b></span><br>Quantity</th>
+              <th style="width:48%;"><span class="underline"><b>Macam dari barang-barang</b></span><br>Description of goods</th>
+              <th style="width:28%;"><span class="underline"><b>Keterangan</b></span><br>Remarks</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="">18 Jan 2019</td>
+              <td style="">1</td>
+              <td style="">Pop es Alpulkat</td>
+              <td style="">Gak pake es</td>
+            </tr>
+            <tr>
+              <td style="">18 Jan 2019</td>
+              <td style="">1</td>
+              <td style="">Pop es Alpulkat</td>
+              <td style="">Gak pake es</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td style=""></td>
+              <td style=""></td>
+              <td style="text-align:left;" class="left">
+                <div class="left">
+                  <span class="underline">
+                    <b>Dikirim oleh</b>
+                  </span>&nbsp;&nbsp;: orang<br>Packed by
+                </div>
+              </td>
+              <td></td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
     </div>
     <div class="row">
       <div class="col-md-4">
@@ -66,9 +85,15 @@
         <span>Copy 2&nbsp;&nbsp;: File</span>
       </div>
     </div>
-    <div id="footer">
-      <p class="noform">GMF/A-11</p>
-      <p class="pageno">Page 1 of 1</p>
-    </div>
+    <footer class="row" id="footer">
+      <div class="col-md-3">
+        <p class="text-left noform">GMF/A-11</p>
+      </div>
+      <div class="col-md-6">
+      </div>
+      <div class="col-md-3">
+        <p class="text-right pageno">Page 1 of 1</p>
+      </div>
+    </footer>
   </body>
 </html>

@@ -1,3 +1,43 @@
+body{ margin:0 auto; }
+
+@media print{
+  html, body {
+    margin: 0;
+    height: 100%;
+    vertical-align: middle;
+  }
+
+  .table, .table thead th, .table tfoot td{
+    border: 2px solid black !important;
+  }
+
+  .table tbody td{
+    border-right: 2px solid black !important;
+    border-bottom: 2px dotted black !important;
+  }
+
+  .table tfoot td{
+    border: 2px solid black !important;
+  }
+
+  hr {
+    border: 0;
+    clear:both;
+    display:block;
+    width: 96%;
+    background-color: black !important;
+    height: 1px;
+  }
+}
+
+@page {
+  size; A4;
+}
+
+.left{
+  margin-left: 10px;
+}
+
 #logo{
   width: 400px;
   filter: grayscale(100%);
@@ -18,14 +58,6 @@
   text-align: center;
 }
 
-th{
-  font-weight: normal;
-}
-
-@page {
-  size; A4;
-}
-
 @media print {
   html, body {
     width: 210mm;
@@ -40,15 +72,22 @@ th{
 .underline{
   text-decoration: underline;
 }
-#footer .noform{
-  bottom: 0;
-  margin-left: 20px;
-  margin-top: 850px;
-  text-align: left;
+
+footer
+{
+  display: block;
+  width:100%;
+  position:absolute;
+  left:0;
+  bottom:0;
 }
+
+#footer .noform{
+  text-align: left;
+  margin-left: 20px;
+}
+
 #footer .pageno{
-  bottom: 0;
   text-align: right;
   margin-right: 20px;
-  margin-top: 0px;
 }
