@@ -7,27 +7,61 @@ body{ margin:0 auto; }
     vertical-align: middle;
   }
 
-  .table, .table thead th, .table tfoot td{
+  body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  .table, .table thead th, .table tbody #tfoot td{
     border: 2px solid black !important;
   }
 
-  .table tbody td{
+  .table tbody tr td{
     border-right: 2px solid black !important;
     border-bottom: 2px dotted black !important;
   }
 
-  .table tfoot td{
-    border: 2px solid black !important;
+  .table tbody #tfoot td{
+    width: auto;
+    border-top: 2px solid black !important;
+    border-bottom: 2px dotted black !important;
   }
 
-  hr {
-    border: 0;
-    clear:both;
-    display:block;
-    width: 96%;
-    background-color: black !important;
-    height: 1px;
+  header{
+    display: inline-block;
+    position: fixed;
+    width:100%;
   }
+
+  footer{
+    clear: both;
+    background-color: transparent;
+    flex: 0 0 50px;/*or just height:50px;*/
+    margin-top: auto;
+  }
+
+  .container{
+    display: block;
+    margin-bottom:100px
+  }
+
+  .pageno{
+    display: block;
+  }
+
+  .pageno:after{
+    content: counter(page) " of " counter(pages);
+  }
+}
+
+.table, .table thead th, .table tbody #tfoot td{
+  border: 2px solid black !important;
+}
+
+.table tbody tr td{
+  border-right: 2px solid black !important;
+  border-bottom: 2px dotted black !important;
 }
 
 @page {
@@ -58,13 +92,6 @@ body{ margin:0 auto; }
   text-align: center;
 }
 
-@media print {
-  html, body {
-    width: 210mm;
-    height: 297mm;
-  }
-}
-
 .ttd{
   margin-left:20px;
 }
@@ -73,11 +100,18 @@ body{ margin:0 auto; }
   text-decoration: underline;
 }
 
+header{
+  display: block;
+  position: static;
+  width:100%;
+}
+
 footer
 {
-  display: block;
+  clear: both;
+  display: inline-block;
+  position: static;
   width:100%;
-  position:absolute;
   left:0;
   bottom:0;
 }
@@ -85,9 +119,23 @@ footer
 #footer .noform{
   text-align: left;
   margin-left: 20px;
+  margin-bottom: 0;
 }
 
 #footer .pageno{
   text-align: right;
   margin-right: 20px;
+}
+
+.container{
+  margin-bottom:100px
+}
+
+.pageno{
+  counter-increment: page;
+  display: block;
+}
+
+.pageno:after{
+  content: counter(page) " of " counter(pages);
 }
