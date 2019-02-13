@@ -109,8 +109,9 @@ header{
 footer
 {
   clear: both;
+  z-index: 100;
   display: inline-block;
-  position: static;
+  position: fixed;
   width:100%;
   left:0;
   bottom:0;

@@ -55,6 +55,7 @@
 			<Item Name="sub_status_transaction.vi" Type="VI" URL="../SUB/sub_status_transaction.vi"/>
 		</Item>
 		<Item Name="EQUIPMENT_MANAGER.vi" Type="VI" URL="../EQUIPMENT_MANAGER.vi"/>
+		<Item Name="LATEX.vi" Type="VI" URL="../LATEX.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="BuildHelpPath.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/BuildHelpPath.vi"/>
