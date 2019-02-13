@@ -54,6 +54,7 @@
 			<Item Name="sub_font_customize.vi" Type="VI" URL="../SUB/sub_font_customize.vi"/>
 			<Item Name="sub_status_transaction.vi" Type="VI" URL="../SUB/sub_status_transaction.vi"/>
 		</Item>
+		<Item Name="dashboard.vi" Type="VI" URL="../dashboard.vi"/>
 		<Item Name="EQUIPMENT_MANAGER.vi" Type="VI" URL="../EQUIPMENT_MANAGER.vi"/>
 		<Item Name="LATEX.vi" Type="VI" URL="../LATEX.vi"/>
 		<Item Name="sub_chart_pie.vi" Type="VI" URL="../sub_chart_pie.vi"/>
