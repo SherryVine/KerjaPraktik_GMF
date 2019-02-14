@@ -1,1 +1,7 @@
 /EQUIPMENT_MANAGER/SRC
+/EQUIPMENT_MANAGER/EQUIPMENT.accdb
+/Print/*.aux
+/Print/*.log
+/Print/*.tex
+/Print/*.pdf
+/Print/*.synctex.gz
